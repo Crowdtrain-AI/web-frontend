@@ -1,0 +1,53 @@
+/*#root {*/
+/*  max-width: 1280px;*/
+/*  margin: 0 auto;*/
+/*  padding: 2rem;*/
+/*  text-align: center;*/
+/*}*/
+
+/*.logo {*/
+/*  height: 6em;*/
+/*  padding: 1.5em;*/
+/*  will-change: filter;*/
+/*  transition: filter 300ms;*/
+/*}*/
+/*.logo:hover {*/
+/*  filter: drop-shadow(0 0 2em #646cffaa);*/
+/*}*/
+/*.logo.react:hover {*/
+/*  filter: drop-shadow(0 0 2em #61dafbaa);*/
+/*}*/
+
+/*@keyframes logo-spin {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*  a:nth-of-type(2) .logo {*/
+/*    animation: logo-spin infinite 20s linear;*/
+/*  }*/
+/*}*/
+
+/*.card {*/
+/*  padding: 2em;*/
+/*}*/
+
+/*.read-the-docs {*/
+/*  color: #888;*/
+/*}*/
+
+.hero-glow-bg {
+    background: linear-gradient(197.37deg, rgb(116, 80, 219) -0.38%, rgba(138, 234, 240, 0) 101.89%), linear-gradient(115.93deg, rgb(62, 136, 246) 4.86%, rgba(62, 180, 246, 0.33) 38.05%, rgba(62, 235, 246, 0) 74.14%), radial-gradient(56.47% 76.87% at 6.92% 7.55%, rgba(62, 136, 246, 0.7) 0%, rgba(62, 158, 246, 0.18) 52.16%, rgba(62, 246, 246, 0) 100%), linear-gradient(306.53deg, rgb(46, 228, 227) 19.83%, rgba(46, 228, 227, 0) 97.33%);
+    border-radius: 30rem;
+    background-blend-mode: normal, normal, normal, normal, normal, normal;
+    filter: blur(99px);
+    height: 100%;
+    width: 100%;
+    /*max-height: 400px;*/
+    /*max-width: 400px;*/
+}
