@@ -1,12 +1,20 @@
 import {Divider, Link} from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-import {faGithub} from "@fortawesome/free-brands-svg-icons"
+import {faGithub, faDiscord} from "@fortawesome/free-brands-svg-icons"
+import PageLink from "../../types/PageLink.ts";
 
 const FooterView = () => {
 
+    const pages: PageLink[] = [
+        {name: 'Home', href: '/'},
+        {name: 'Models', href: '/models'},
+        {name: 'Datasets', href: '/datasets'},
+        {name: 'Get started', href: '/get-started'}
+    ]
+
     return (
-        <footer className="bg-content1 flex justify-center px-32 py-8">
+        <footer className="bg-content1 flex justify-center px-12 md:px-32 py-8">
             <div className="flex flex-col gap-8 max-w-screen-md w-full">
 
                 {/*<div className="space-y-2 inline-block self-start">*/}
@@ -19,10 +27,17 @@ const FooterView = () => {
                         <span className="text-default-500 text-sm">Platform</span>
 
                         <div className="space-y-1">
-                            <p><Link href="/">Home</Link></p>
-                            <p><Link href="/models">Models</Link></p>
+                            {/*<p><Link href="/">Home</Link></p>*/}
+                            {
+                                pages.map((page, index) => (
+                                    <p key={index}>
+                                        <Link href={page.href}>{page.name}</Link>
+                                    </p>
+                                ))
+                            }
+                            {/*<p><Link href="/models">Models</Link></p>*/}
                             <p><Link href="/how-it-works">How it works</Link></p>
-                            <p><Link href="/get-started">Get started</Link></p>
+                            {/*<p><Link href="/get-started">Get started</Link></p>*/}
                         </div>
                     </div>
 
@@ -38,11 +53,12 @@ const FooterView = () => {
 
                 <Divider/>
 
-                <div className="inline-flex justify-between text-default-500">
+                <div className="inline-flex justify-between text-default-500 gap-8">
                     <p>© {2024} Crowdtrain. All rights reserved.</p>
 
-                    <div>
+                    <div className="space-x-4 whitespace-nowrap">
 
+                        <Link href="https://discord.gg/D9xbHPbCQg" isExternal={true}><FontAwesomeIcon icon={faDiscord} size={"xl"} /></Link>
                         <Link href="https://github.com/Crowdtrain-AI" isExternal={true}><FontAwesomeIcon icon={faGithub} size={"xl"} /></Link>
                     </div>
                 </div>
