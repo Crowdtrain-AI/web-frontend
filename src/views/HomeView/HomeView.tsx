@@ -52,15 +52,15 @@ const ipsumModels = [
 const HomeView = () => {
 
     const [models, setModels] = useState<ModelCardData[]>(ipsumModels)
-
-    return <div className="py-16 px-32 gap-8 flex items-center flex-col xl:flex-row">
+    // xl:flex-row
+    return <div className="py-16 px-12 md:px-32 gap-8 flex items-center flex-col">
 
         <div className="space-y-6">
 
-            <h1 className="text-6xl font-extrabold">
+            <h1 className="text-3xl sm:text-6xl font-extrabold sm:leading-tight">
                 Making a new model?
             </h1>
-            <h2 className="text-4xl font-bold text-primary">
+            <h2 className="text-xl sm:text-4xl font-bold text-primary">
                 We want to train it. <b>Now.</b>
             </h2>
         </div>
@@ -68,10 +68,10 @@ const HomeView = () => {
         <div className="w-full flex items-center flex-col relative">
             <div className="hero-glow-bg w-full h-full absolute opacity-20"/>
 
-            <div className="space-y-4">
+            <div className="space-y-4 inline-flex flex-col">
                 <h3 className="text-lg font-bold">Featured projects</h3>
 
-                <div className="inline-flex max-w-screen-lg gap-4 justify-center">
+                <div className="inline-grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-screen-lg gap-4 justify-center">
 
                     {models.map((data, i) =>
                         <ModelCard
@@ -81,7 +81,7 @@ const HomeView = () => {
                     )}
                 </div>
 
-                <div className="space-x-3 py-4">
+                <div className="gap-3 py-4 inline-flex flex-wrap">
                     <Button
                         onClick={() => window.location.href = '/models'}
                         endContent={<ArrowUpRightIcon className="w-5 h-5"/>}
