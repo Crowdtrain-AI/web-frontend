@@ -13,9 +13,12 @@ const ipsumModels = [
         title: 'Dynamic Detail Enhancement',
         author: faker.person.firstName(),
         description: 'Enhancing details dynamically for a more immersive experience.',
-        image: '',
+        images: [`https://picsum.photos/seed/${faker.number.int({min: 0, max: 100})}/500/300`],
+        coverImageIndex: 0,
         trainingCount: Math.round(Math.random() * 1000),
-        category: 'Dynamic Details'
+        tags: ['Dynamic Details'],
+        createdAt: faker.date.recent().getTime(),
+        checkpointUpdatedAt: faker.date.recent().getTime()
     },
     {
         id: faker.string.uuid(),
@@ -23,9 +26,12 @@ const ipsumModels = [
         title: 'Artistry in Architecture',
         author: faker.person.firstName(),
         description: 'Bringing artistry to architecture with fine-tuned adjustments.',
-        image: '',
+        images: [`https://picsum.photos/seed/${faker.number.int({min: 0, max: 100})}/500/300`],
+        coverImageIndex: 0,
         trainingCount: Math.round(Math.random() * 1000),
-        category: 'Architectural Artistry'
+        tags: ['Architectural Artistry'],
+        createdAt: faker.date.recent().getTime(),
+        checkpointUpdatedAt: faker.date.recent().getTime()
     },
     {
         id: faker.string.uuid(),
@@ -33,9 +39,12 @@ const ipsumModels = [
         title: 'Realistic finetune for SD3',
         author: faker.person.firstName(),
         description: 'A realistic finetune for SD3, with a focus on the best possible results.',
-        image: '',
+        images: [`https://picsum.photos/seed/${faker.number.int({min: 0, max: 100})}/500/300`],
+        coverImageIndex: 0,
         trainingCount: Math.round(Math.random() * 1000),
-        category: 'Realistic'
+        tags: ['Realistic'],
+        createdAt: faker.date.recent().getTime(),
+        checkpointUpdatedAt: faker.date.recent().getTime()
     },
     {
         id: faker.string.uuid(),
@@ -43,9 +52,12 @@ const ipsumModels = [
         title: 'Pixel Precision Project',
         author: faker.person.firstName(),
         description: 'A project focused on achieving pixel precision for sharper images.',
-        image: '',
+        images: [`https://picsum.photos/seed/${faker.number.int({min: 0, max: 100})}/500/300`],
+        coverImageIndex: 0,
         trainingCount: Math.round(Math.random() * 1000),
-        category: 'Pixel Precision'
+        tags: ['Pixel Precision'],
+        createdAt: faker.date.recent().getTime(),
+        checkpointUpdatedAt: faker.date.recent().getTime()
     }
 ]
 

@@ -13,7 +13,7 @@ const ModelCard = ({data}: {data: ModelCardData}) => {
                     width="100%"
                     alt={data.title}
                     className="w-full object-cover h-[140px]"
-                    src={data.image}
+                    src={data.images[data.coverImageIndex]}
                 />
             </CardBody>
             <CardFooter className="text-small flex-col items-start grow justify-between">

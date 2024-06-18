@@ -23,7 +23,7 @@ function App() {
     const isModelDetail = uriParts.length >= 2 && uriParts[0] === 'model';
 
   return (<>
-      <div className="min-h-screen overflow-auto">
+      <div className="min-h-screen overflow-hidden">
           <NavbarView location={location}/>
 
           {isHome && (

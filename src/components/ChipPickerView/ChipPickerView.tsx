@@ -33,7 +33,6 @@ const ChipPickerView = ({
             {
                 Object.keys(items).map(((item, index) =>
                     <ChipCheckboxView
-                        value={item}
                         key={index}
                         isSelected={
                             selectedChips.includes(item)
