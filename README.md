@@ -13,6 +13,8 @@ Very much a work-in-progress, full of placeholders. Feel free to make pull reque
 
 /models - Grid feed of model project cards, with search
 
+/datasets - Grid feed of dataset project cards, with search
+
 /get-started - Instructions on how to install desktop training software
 
 /create-project - Form to publish model training project
@@ -20,6 +22,8 @@ Very much a work-in-progress, full of placeholders. Feel free to make pull reque
 /login - SSO portal
 
 /model/:modelId - Model project detail view, statistics, image carousel, details
+
+/user/:userId - User detail view, projects, followers, bio
 
 ...much more to come
 
@@ -31,3 +35,5 @@ Very much a work-in-progress, full of placeholders. Feel free to make pull reque
 
 ## Abstract
 Crowdtrain's web frontend serves to pair visitors with model makers to support or contribute to training. Model makers publish a pitch, like a crowdfunding campaign, and instead of donating (which will also be an option), the main call-to-action is to begin training at the model's latest checkpoint with some of the dataset. The web platform connects to another application by Crowdtrain, which is installed onto a desktop machine or server, and receives instructions from the user on what model to download, train, and where to communicate progress weights.
+
+There are also plans to support crowd sourced dataset creation, curation, and collaboration. A rich editor for capturing as many elements and aspects of images to create the highest fidelity understanding when trained on.
