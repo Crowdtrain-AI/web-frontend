@@ -3,7 +3,10 @@ A React frontend for our web platform
 
 Very much a work-in-progress, full of placeholders. Feel free to make pull requests.
 
-![image](https://github.com/Crowdtrain-AI/web-frontend/assets/172853169/c217c13f-aaf6-4e76-974c-fa40d1d72418)
+| ![image](https://github.com/Crowdtrain-AI/web-frontend/assets/172853169/abfcf633-1bf9-49fc-82b9-9f7002d31a7a) | ![image](https://github.com/Crowdtrain-AI/web-frontend/assets/172853169/67b81e7f-04a7-4801-9166-b4a6b23c6504) |
+|:---:|:---:|
+
+![image](https://github.com/Crowdtrain-AI/web-frontend/assets/172853169/c2629270-0888-41a3-a1d0-5de23f5b7c12)
 
 ## Sitemap plan
 / - Home, hero, featured projects, call-to-actions
