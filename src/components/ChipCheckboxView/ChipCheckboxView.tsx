@@ -1,13 +1,10 @@
-import {useCheckbox, Chip, VisuallyHidden, tv, Button} from "@nextui-org/react";
-import {CheckIcon} from "@heroicons/react/16/solid";
+import {Button} from "@nextui-org/react";
 
 const ChipCheckboxView = ({
-    value,
     isSelected,
     toggleSelected,
     children
 }: {
-    value: string,
     isSelected: boolean,
     toggleSelected: () => void,
     children?: React.ReactNode

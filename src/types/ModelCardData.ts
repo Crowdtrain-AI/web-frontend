@@ -4,9 +4,12 @@ interface ModelCardData {
     title: string;
     description: string;
     author: string;
-    image: string;
+    images: string[];
+    coverImageIndex: number;
     trainingCount: number;
-    category: string;
+    tags: string[];
+    createdAt: number;
+    checkpointUpdatedAt: number;
 }
 
 export default ModelCardData;

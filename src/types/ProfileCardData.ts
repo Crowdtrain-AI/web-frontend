@@ -1,7 +1,8 @@
 interface ProfileCardData {
     id: string;
+    isTeam: boolean;
+    isVerified: boolean;
     username: string;
-    fullName: string;
     avatarUrl: string;
     bio: string;
     modelsCreated: number;
@@ -10,7 +11,7 @@ interface ProfileCardData {
     following: number;
     githubUrl: string;
     joinedAt: number;
-    country: string;
+    country?: string;
     discordUsername: string;
 }
 
